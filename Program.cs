@@ -11,7 +11,7 @@ namespace ContextCMD
             if (arg.Equals("install"))
             {
                 string cl = "cmd";
-                string desc = "コマンドプロンプトを開く";
+                string desc = "Open Terminal";
                 // Folder
                 RegistryKey cmdKey = Registry.ClassesRoot.CreateSubKey("Folder\\shell\\" + verb + "\\command");
                 cmdKey.SetValue("", cl);
